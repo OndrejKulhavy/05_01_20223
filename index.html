@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Gallery</title>
+</head>
+
+<body>
+    <div id="forms">
+        <div class="form">
+            <h1>Author</h1>
+            <form id="author_form">
+                <label for="firstname">First name:</label>
+                <input type="text" name="firstname" id="firstname" required>
+                <br>
+                <label for="lastname">Last name:</label>
+                <input type="text" name="lastname" id="lastname" required>
+                <br>
+                <label for="dateofbirth">Date of birth:</label>
+                <input type="date" name="dateofbirth" id="dateofbirth" required>
+                <br>
+                <input id="author_form_button" type="button" value="Submit">
+            </form>
+        </div>
+
+        <div class="form">
+            <form id="painting_form">
+                <h1>Painting</h1>
+                <label for="title">Title:</label>
+                <input type="text" name="title" id="title" required>
+                <br>
+                <label for="price">Price:</label>
+                <input type="number" name="price" id="price" required>
+                <br>
+                <label for="year">Year:</label>
+                <input type="number" name="year" min="1900" max="3000" step="1" id="year" required>
+                <br>
+                <label for="author">Author:</label>
+                <select name="author" id="author">
+
+                </select>
+                <br>
+                <input type="submit" id="painting_form_button" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <div id="galery">
+
+    </div>
+
+</body>
+
+</html>
